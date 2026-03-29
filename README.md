@@ -83,6 +83,21 @@ Created an interactive dashboard showing:
 
 ---
 
+## 🧾 SQL Queries
+
+The project includes SQL queries used for:
+
+- data validation
+- row count checks
+- date transformation
+- feature engineering
+- food type classification
+- time-based analysis
+
+📂 File: `queries.sql`
+
+---
+
 ## 🔗 Data Model (Relationships)
 
 ![Data Model](screenshots/model_relationship.png)
