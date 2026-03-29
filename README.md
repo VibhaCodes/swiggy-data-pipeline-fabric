@@ -1,22 +1,27 @@
 # 🍽️ Swiggy End-to-End Data Pipeline using Microsoft Fabric
 
+---
+
 ## 📌 Project Overview
-This project demonstrates an end-to-end data pipeline using Microsoft Fabric for processing and analyzing a Swiggy dataset. The pipeline includes data ingestion, transformation, modeling, and visualization using Lakehouse, Warehouse, and Power BI.
+This project demonstrates a complete **end-to-end data engineering pipeline** built using **Microsoft Fabric**.  
+It covers data ingestion, transformation, modeling, and visualization to generate meaningful business insights from Swiggy datasets.
 
 ---
 
 ## 🎯 Objectives
-- Build a complete data pipeline using Microsoft Fabric  
-- Perform data transformation and modeling  
-- Enable analytics using structured datasets  
-- Generate business insights using Power BI dashboards  
+- Build a scalable data pipeline using Microsoft Fabric  
+- Perform data cleaning and transformation  
+- Design a structured data model (Star Schema)  
+- Enable analytics using Warehouse  
+- Create interactive dashboards using Power BI  
 
 ---
 
 ## 🛠️ Technologies Used
-- Microsoft Fabric (Lakehouse, Warehouse, Dataflow)  
+- Microsoft Fabric (Lakehouse, Warehouse, Pipeline)  
 - SQL  
 - Power BI  
+- CSV Data Sources  
 
 ---
 
@@ -25,13 +30,17 @@ Raw Data → Lakehouse → Transformation → Warehouse → Power BI Dashboard
 
 ---
 
+
+---
+
 ## 📂 Dataset
-The project uses multiple CSV files:
-- fact_orders.csv  
-- dim_restaurant.csv  
-- dim_location.csv  
-- dim_dish.csv  
-- dim_date.csv  
+The project uses multiple structured datasets:
+
+- 📄 fact_orders.csv  
+- 📄 dim_restaurant.csv  
+- 📄 dim_location.csv  
+- 📄 dim_dish.csv  
+- 📄 dim_date.csv  
 
 ---
 
@@ -39,43 +48,90 @@ The project uses multiple CSV files:
 
 ### 🔹 1. Data Ingestion (Lakehouse)
 - Uploaded raw CSV files into Fabric Lakehouse  
-- Organized data into structured tables  
+- Converted raw data into structured tables  
+
+---
 
 ### 🔹 2. Data Transformation
-- Performed data cleaning and transformation using SQL and Dataflows  
-- Handled missing values and ensured consistent data types  
+- Cleaned and transformed data using SQL  
+- Handled missing values  
+- Standardized data formats  
+
+---
 
 ### 🔹 3. Data Modeling (Warehouse)
-- Created structured tables in Warehouse  
-- Established relationships between fact and dimension tables  
+- Created fact and dimension tables  
+- Implemented **Star Schema**  
+- Established relationships between tables  
 
-### 🔹 4. Data Visualization
-- Built Power BI dashboards to analyze:
-  - Sales trends  
-  - Order patterns  
-  - Customer insights  
+---
+
+### 🔹 4. Data Pipeline (Automation)
+- Built a **pipeline in Microsoft Fabric**  
+- Copied data from Lakehouse → Warehouse  
+- Enabled automated data flow  
+
+---
+
+### 🔹 5. Data Visualization (Power BI)
+Created an interactive dashboard showing:
+- 📊 Total Sales  
+- 📈 Monthly Trends  
+- ⭐ Average Rating  
+- 🍽️ Top Restaurants  
+- 📍 Location-wise Sales  
+
+---
+
+## 🔗 Data Model (Relationships)
+
+![Data Model](screenshots/model_relationship.png)
+
+👉 Star schema with:
+- `fact_orders` as Fact table  
+- Dimension tables: date, dish, location, restaurant  
+
+---
+
+## 📊 Dashboard Preview
+
+![Dashboard](screenshots/dashboard.png)
+
+---
+
+## ⚙️ Pipeline Execution
+
+![Pipeline](screenshots/Pipeline.png)
+
+---
+
+## 🏢 Lakehouse Setup
+
+![Lakehouse](screenshots/Swiggy_lakehouse.png)
 
 ---
 
 ## 📊 Key Insights
-- Identified top-performing restaurants based on orders  
-- Analyzed sales trends across locations  
-- Derived customer ordering patterns  
-
----
-
-## 📷 Screenshots
-(Add your screenshots here)
+- Identified top-performing restaurants  
+- Analyzed sales trends across cities  
+- Discovered ordering patterns and peak periods  
+- Compared Veg vs Non-Veg sales distribution  
 
 ---
 
 ## 🚀 Future Improvements
-- Automate pipeline using Data Factory pipelines  
-- Add real-time data ingestion  
-- Optimize queries for better performance  
+- Implement incremental data loading  
+- Add real-time streaming data  
+- Optimize warehouse queries  
+- Integrate advanced analytics  
 
 ---
 
 ## 👩‍💻 Author
-Vibha Pateshwari  
-GitHub: https://github.com/VibhaCodes
+**Vibha Pateshwari**  
+🔗 GitHub: https://github.com/VibhaCodes  
+
+---
+
+⭐ *This project demonstrates a modern data engineering workflow using Microsoft Fabric, combining ETL, data modeling, and business intelligence.*
+
