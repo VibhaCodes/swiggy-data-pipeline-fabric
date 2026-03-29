@@ -94,7 +94,7 @@ The project includes SQL queries used for:
 - food type classification
 - time-based analysis
 
-📂 File: `queries.sql`
+📂 File: `swiggy_queries.sql`
 
 ---
 
