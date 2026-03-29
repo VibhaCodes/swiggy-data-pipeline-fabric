@@ -117,13 +117,6 @@ Created an interactive dashboard showing:
 - Discovered ordering patterns and peak periods  
 - Compared Veg vs Non-Veg sales distribution  
 
----
-
-## 🚀 Future Improvements
-- Implement incremental data loading  
-- Add real-time streaming data  
-- Optimize warehouse queries  
-- Integrate advanced analytics  
 
 ---
 
